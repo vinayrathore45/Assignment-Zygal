@@ -24,7 +24,7 @@ const Login = () => {
        //  set user to localstorage
           let user = res.data.user;
           localStorage.setItem("user" , JSON.stringify({id : user._id , isLoggedIn : true}));
-          navigate('/dashBoard');
+          navigate('/homePage');
           setEmail("");
        } catch (error) {
          console.error(error);
